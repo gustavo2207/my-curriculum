@@ -1,0 +1,55 @@
+<p-card class="p-card">
+  <div class="card w-11 mx-auto">
+    <h2>Profile Informations</h2>
+    <form action="" [formGroup]="personalInfosForm" (ngSubmit)="updateUser()">
+      <div class="formgrid grid">
+        <div class="field col-12 md:col-6">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+            <input type="text" pInputText placeholder="Name" formControlName="name">
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-6">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-phone"></i></span>
+            <input type="text" pInputText placeholder="Phone" formControlName="phone">
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-12">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-envelope"></i></span>
+            <input type="text" pInputText placeholder="Email" formControlName="email">
+          </div>
+        </div>
+
+        <h3 class="text-md ml-2 mb-2">Links Social Medias</h3>
+        <div class="field col-12 md:col-12">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-github"></i></span>
+            <input type="text" pInputText placeholder="Github" formControlName="githubLink">
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-12">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-linkedin"></i></span>
+            <input type="text" pInputText placeholder="Linkedln" formControlName="linkedlnLink">
+          </div>
+        </div>
+
+        <div class="field col-12 md:col-12">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-instagram"></i></span>
+            <input type="text" pInputText placeholder="Intagram" formControlName="instagramLink">
+          </div>
+        </div>
+
+        <div class="flex pr-5 col-12 md:col-12 justify-content-end">
+          <p-button label="Update Infos" type="submit" [disabled]="personalInfosForm.pristine"></p-button>
+        </div>
+      </div>
+    </form>
+    </div>
+  </p-card>

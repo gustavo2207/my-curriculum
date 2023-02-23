@@ -1,0 +1,126 @@
+.title {
+  font-family: "IBM Plex Sans Bold";
+  font-size: 48px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  background-color: #1b263b;
+  height: 50vh;
+  overflow-y: scroll;
+  width: 80vw;
+  margin: 2rem auto;
+  padding: 2rem 0;
+}
+
+.projects::-webkit-scrollbar {
+  width: 7px;
+}
+
+.projects::-webkit-scrollbar-thumb {
+  background: #e0e1dd;
+  border: 1px solid rgba(255, 255, 255, 0.1475);
+  border-radius: 3.5px;
+}
+
+.projects::-webkit-scrollbar-track {
+  background-color: #415a77;
+}
+
+.bg-color {
+  background-color: #1b263b;
+}
+
+a,
+.img-project,
+.buttons,
+.project-infos,
+.title-project,
+.project-img,
+.description,
+.project {
+  background-color: #778da9;
+}
+
+.project {
+  width: 75vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 25vh;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+
+.title-project {
+  font-family: "IBM Plex Sans SemiBold";
+  font-size: 20px;
+}
+
+.project-img {
+  width: 40vw;
+  height: 20vh;
+}
+
+.project-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.title-project,
+.description {
+  color: #e0e1dd;
+}
+
+.description {
+  font-family: "IBM Plex Sans Medium";
+  font-size: 14px;
+}
+
+.project-infos,
+.project-img {
+  margin: 1rem;
+}
+
+.buttons {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.btn-code,
+.btn-project {
+  width: 7rem;
+  height: 2rem;
+  border-radius: 10px;
+  font-family: "IBM Plex Sans SemiBold";
+  font-size: 12px;
+  border: 0px;
+}
+
+.btn-code {
+  background-color: #57cc99;
+}
+
+.btn-code:active {
+  background-color: #46a57c;
+}
+
+.btn-project {
+  background-color: #80ed99;
+}
+
+.btn-project:active {
+  background-color: #6ac47f;
+}
+
+.img-project {
+  max-width: 150px;
+}

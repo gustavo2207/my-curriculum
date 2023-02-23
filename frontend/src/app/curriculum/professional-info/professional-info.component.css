@@ -1,0 +1,45 @@
+.professional-info{
+  display: flex;
+  gap: 1rem;
+  width: 90vw;
+  justify-content: center;
+  align-content: center;
+  margin: 2rem 3vw;
+}
+
+.professional-experiance, .about-me {
+  width: 40vw;
+}
+
+.professional-experiance {
+  overflow-y: scroll;
+  height: 15rem;
+}
+
+.professional-experiance::-webkit-scrollbar{
+  width: 7px;
+}
+
+.professional-experiance::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5025);
+    border: 1px solid rgba(255, 255, 255, 0.1475);
+    border-radius: 3.5px;
+}
+
+h2 {
+  font-family: 'IBM Plex Sans SemiBold';
+  font-size: 21px;
+}
+
+.title {
+  font-family: 'IBM Plex Sans Medium', sans-serif;
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.work {
+  margin-bottom: 1rem;
+}

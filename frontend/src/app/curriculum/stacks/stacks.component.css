@@ -1,0 +1,39 @@
+.title {
+  font-family: 'IBM Plex Sans Bold', sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+.stacks {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.stack {
+  display: flex;
+  align-content: center;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: "IMB Plex Sans Medium", sans-serif;
+  font-size: 20px;
+}
+
+.stack-list {
+  display: flex;
+  flex-direction: columns;
+  flex-wrap: wrap;
+  width: 10rem;
+}
+
+.stack-img {
+  max-width: 50px;
+}
+
+.title-stacks {
+  font-family: "IMB Plex Sans Bold", sans-serif;
+  font-size: 32px;
+}

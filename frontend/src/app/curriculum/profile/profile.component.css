@@ -1,0 +1,14 @@
+
+.title {
+  font-family: 'IBM Plex Sans Bold';
+  font-size: 3rem;
+  text-align: center;
+}
+.profile {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+}

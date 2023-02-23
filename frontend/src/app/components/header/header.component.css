@@ -1,0 +1,32 @@
+.title {
+  font-family: 'IBM Plex Sans Bold';
+  color: #E0E1DD;
+  font-size: 3rem
+}
+
+.nav-title {
+  width: auto;
+}
+.navbar {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-login {
+  height: 2rem;
+  width: 5rem;
+  border-radius: 5px;
+  background-color: #E0E1DD;
+  border: 0px;
+}
+
+.btn-login:active {
+  background-color: #b9b9b6;
+}
+.btn-navbar {
+  position: absolute;
+  right: 5%;
+  top: 2.5%;
+}

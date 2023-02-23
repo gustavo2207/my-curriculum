@@ -1,0 +1,12 @@
+<ng-container *ngIf="showModal">
+  <div class="modal">
+    <form #loginForm="ngForm" (ngSubmit)="login()">
+      <label class="label">Login</label>
+      <input type="text" name="user" id="username" class="input" [(ngModel)]="user">
+      <label class="label">Password</label>
+      <input type="password" name="password" id="password" class="input" [(ngModel)]="password">
+      <input type="submit" value="Login" class="btn-submit">
+    </form>
+  </div>
+  <div (click)="toggleModal()" class="overlay"></div>
+</ng-container>

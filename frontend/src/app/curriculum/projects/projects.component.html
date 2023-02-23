@@ -1,0 +1,31 @@
+<section class="container">
+  <h1 class="title">Projects</h1>
+  <div class="projects" *ngIf="projects.length !== 0;else placeholder">
+    <div *ngFor="let project of projects">
+      <div class="bg-color">
+        <section class="project">
+          <div class="project-img">
+            <img [src]="project.imageUrl" alt="project image" class="img-project" />
+          </div>
+          <div class="project-infos">
+            <h2 class="title-project">{{project.title}}</h2>
+            <p class="description">
+              {{project.description}}
+            </p>
+            <div class="buttons">
+              <a [href]="project.urlGithub">
+                <button type="button" class="btn-code">Go To Code</button>
+              </a>
+              <a [href]="project.urlProject">
+                <button type="button" class="btn-project">Go To Project</button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+<ng-template #placeholder>
+  <h1>No Projects yet</h1>
+</ng-template>

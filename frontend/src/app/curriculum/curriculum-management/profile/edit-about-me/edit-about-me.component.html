@@ -1,0 +1,9 @@
+<p-card class="p-card">
+  <h2 class="ml-3">Profile Informations</h2>
+  <div class="flex justify-content-center">
+    <textarea rows="5" cols="60" pInputTextarea [autoResize]="true" [(ngModel)]="aboutMe"></textarea>
+  </div>
+  <div class="flex justify-content-end">
+    <p-button label="update About Me" (click)="updateAboutMe()"></p-button>
+  </div>
+</p-card>

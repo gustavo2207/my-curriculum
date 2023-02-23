@@ -1,0 +1,30 @@
+<h1 class="title">Stacks</h1>
+<div class="stacks">
+  <div>
+    <h3 class="title-stacks">Front-End</h3>
+    <ul class="stack-list" *ngFor="let stack of frontStacks">
+      <li class="stack">
+        <img src="{{ stack.url }}" alt="{{ stack.imgName }}" class="stack-img" />
+        <p>{{ stack.name }}</p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h3 class="title-stacks">Back-End</h3>
+    <ul class="stack-list" *ngFor="let stack of backStacks">
+      <li class="stack">
+        <img src="{{ stack.url }}" alt="{{ stack.imgName }}" class="stack-img" />
+        <p>{{ stack.name }}</p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h3 class="title-stacks">Database</h3>
+    <ul class="stack-list" *ngFor="let stack of databaseStacks">
+      <li class="stack">
+        <img src="{{ stack.url }}" alt="{{ stack.imgName }}" class="stack-img" />
+        <p>{{ stack.name }}</p>
+      </li>
+    </ul>
+  </div>
+</div>

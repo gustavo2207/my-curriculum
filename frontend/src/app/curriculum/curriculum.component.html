@@ -1,0 +1,15 @@
+<p-progressSpinner *ngIf="isLoading;else principalPage"></p-progressSpinner>
+<ng-template #principalPage>
+  <app-header title="Full Stack Developer"></app-header>
+  <app-profile userName="{{ user.name }}"></app-profile>
+  <app-professional-info aboutMe="{{ user.aboutMe }}"></app-professional-info>
+  <app-stacks></app-stacks>
+  <app-projects></app-projects>
+  <app-footer
+    userName="{{ user.name }}"
+    phoneNumber="{{ user.phone }}"
+    email="{{ user.email }}"
+  ></app-footer>
+</ng-template>
+<router-outlet></router-outlet>
+

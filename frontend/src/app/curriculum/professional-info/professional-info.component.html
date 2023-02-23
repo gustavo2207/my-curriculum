@@ -1,0 +1,19 @@
+<section class="professional-info">
+  <article class="professional-experiance">
+    <h2>Professional Experiance</h2>
+    <div *ngFor="let experiance of experiances">
+      <div class="work">
+        <h3 class="title">{{ experiance.title }}</h3>
+        <p>
+          {{ experiance.description }}
+        </p>
+      </div>
+    </div>
+  </article>
+  <article class="about-me">
+    <h2>About Me</h2>
+    <p>
+      {{ aboutMe }}
+    </p>
+  </article>
+</section>

@@ -1,0 +1,75 @@
+<p-tabMenu [model]="items"></p-tabMenu>
+
+<ng-template [ngIf]="addExperiance">
+  <p-card class="p-card">
+    <form action="" [formGroup]="experianceForm" (submit)="createExperiance()">
+      <div class="formgrid grid">
+        <div class="field col-12">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-briefcase"></i></span>
+            <input type="text" pInputText placeholder="Title" formControlName="title">
+          </div>
+        </div>
+        <div class="field col-12">
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon"><i class="pi pi-file-edit"></i></span>
+            <input type="text" pInputText placeholder="Description" formControlName="description">
+          </div>
+        </div>
+        <div class="flex pr-5 col-12 md:col-12 justify-content-end">
+          <p-button label="Update Experiance" type="submit" [disabled]="experianceForm.invalid"></p-button>
+        </div>
+      </div>
+    </form>
+  </p-card>
+</ng-template>
+
+<ng-template [ngIf]="removeExperiance">
+  <p-card class="p-card">
+    <h2>Professional Experiances</h2>
+    <div class="card w-11 mx-auto my-4" *ngFor="let experiance of experiances">
+      <p-panel header="{{experiance.title}}">
+        <ng-template pTemplate="icons">
+          <button pButton pRipple type="button" icon="pi pi-minus" class="p-button-rounded p-button-danger" (click)="deleteExperiance(experiance._id)"></button>
+        </ng-template>
+        {{experiance.description}}
+      </p-panel>
+    </div>
+  </p-card>
+</ng-template>
+
+<ng-template [ngIf]="listExperiance">
+  <p-card class="p-card">
+    <h2>Professional Experiances</h2>
+    <div class="card w-11 mx-auto my-4" *ngFor="let experiance of experiances">
+      <p-panel header="{{experiance.title}}">
+        <ng-template pTemplate="icons">
+          <button pButton pRipple type="button" icon="pi pi-pencil" class="p-button-rounded" (click)="showSideBar(experiance._id)"></button>
+        </ng-template>
+        {{experiance.description}}
+      </p-panel>
+    </div>
+  </p-card>
+</ng-template>
+
+<p-sidebar [(visible)]="display" [fullScreen]="true" (onHide)="experianceForm.reset()">
+  <form action="" [formGroup]="experianceForm" (submit)="updateExperiance()">
+    <div class="formgrid grid">
+      <div class="field col-12">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon"><i class="pi pi-briefcase"></i></span>
+          <input type="text" pInputText placeholder="Title" formControlName="title">
+        </div>
+      </div>
+      <div class="field col-12">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon"><i class="pi pi-file-edit"></i></span>
+          <input type="text" pInputText placeholder="Description" formControlName="description">
+        </div>
+      </div>
+      <div class="flex pr-5 col-12 md:col-12 justify-content-end">
+        <p-button label="Update Experiance" type="submit" [disabled]="experianceForm.pristine"></p-button>
+      </div>
+    </div>
+  </form>
+</p-sidebar>
